@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        passwordTextField.secureTextEntry = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
