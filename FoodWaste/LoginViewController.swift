@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(sender: UIButton) {
         
 
-        if emailTxtField.text == "" || passwordTextField.text == "" {
+        if emailTxtField.text!.isEmpty || passwordTextField.text!.isEmpty {
             
             //alert dizendo que é preciso preencher todos os campos
                let alert = UIAlertController(title: "Warning", message: "You need to enter with email and password", preferredStyle: UIAlertControllerStyle.Alert)

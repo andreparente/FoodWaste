@@ -109,7 +109,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="confirmPassword" destination="tRb-i1-II5" id="PKs-OE-YJs"/>
+                        <outlet property="email" destination="WT2-eO-9bh" id="P6P-Xl-Ovs"/>
+                        <outlet property="name" destination="HaX-Bw-j9y" id="l0V-HH-Dyw"/>
                         <outlet property="nameRegister" destination="HaX-Bw-j9y" id="bcY-el-klF"/>
+                        <outlet property="password" destination="G6a-Rk-YXJ" id="1g3-4G-ByZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQs-oM-bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>

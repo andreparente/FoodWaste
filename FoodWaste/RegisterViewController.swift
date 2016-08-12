@@ -7,9 +7,13 @@
 //
 
 import UIKit
-
+import TextFieldEffects
 class RegisterViewController: UIViewController {
    
+    @IBOutlet weak var name: HoshiTextField!
+    @IBOutlet weak var email: HoshiTextField!
+    @IBOutlet weak var password: HoshiTextField!
+    @IBOutlet weak var confirmPassword: HoshiTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
