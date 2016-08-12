@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import TextFieldEffects
 
-class ViewController: UIViewController {
 
+class LoginViewController: UIViewController {
+
+    @IBOutlet weak var emailTxtField: HoshiTextField!
+    
+    @IBOutlet weak var passwordTextField: HoshiTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,5 +28,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func signUpAction(sender: UIButton) {
+        performSegueWithIdentifier("LoginToRegisterViewController", sender: self)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
 }
 

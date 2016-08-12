@@ -1,0 +1,6 @@
+framework module Pods_FoodWaste {
+  umbrella header "Pods-FoodWaste-umbrella.h"
+
+  export *
+  module * { export * }
+}

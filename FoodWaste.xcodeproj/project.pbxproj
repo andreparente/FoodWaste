@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8A1A75F41D5D6A1600851CE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A75F31D5D6A1600851CE5 /* AppDelegate.swift */; };
-		8A1A75F61D5D6A1600851CE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A75F51D5D6A1600851CE5 /* ViewController.swift */; };
+		8A1A75F61D5D6A1600851CE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A75F51D5D6A1600851CE5 /* LoginViewController.swift */; };
 		8A1A75F91D5D6A1600851CE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1A75F71D5D6A1600851CE5 /* Main.storyboard */; };
 		8A1A75FC1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A75FA1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld */; };
 		8A1A75FE1D5D6A1600851CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1A75FD1D5D6A1600851CE5 /* Assets.xcassets */; };
 		8A1A76011D5D6A1600851CE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1A75FF1D5D6A1600851CE5 /* LaunchScreen.storyboard */; };
+		8A1A76091D5D71E500851CE5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A76081D5D71E500851CE5 /* RegisterViewController.swift */; };
+		8A1A76101D5D7A8E00851CE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A760F1D5D7A8E00851CE5 /* User.swift */; };
+		AFDC3C3A95177CD498E2FCA3 /* Pods_FoodWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodWaste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1A75F01D5D6A1600851CE5 /* FoodWaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1A75F31D5D6A1600851CE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A1A75F51D5D6A1600851CE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A1A75F51D5D6A1600851CE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A1A75F81D5D6A1600851CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A1A75FB1D5D6A1600851CE5 /* FoodWaste.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodWaste.xcdatamodel; sourceTree = "<group>"; };
 		8A1A75FD1D5D6A1600851CE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1A76001D5D6A1600851CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1A76021D5D6A1600851CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1A76081D5D71E500851CE5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8A1A760F1D5D7A8E00851CE5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.release.xcconfig"; sourceTree = "<group>"; };
+		BDCCEB31526FD71FD01489D2 /* Pods-FoodWaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDC3C3A95177CD498E2FCA3 /* Pods_FoodWaste.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA90D9F93AB07DF5350C9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AC1AF329E63358986D7E81C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDCCEB31526FD71FD01489D2 /* Pods-FoodWaste.debug.xcconfig */,
+				B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8A1A75E71D5D6A1600851CE5 = {
 			isa = PBXGroup;
 			children = (
 				8A1A75F21D5D6A1600851CE5 /* FoodWaste */,
 				8A1A75F11D5D6A1600851CE5 /* Products */,
+				7AC1AF329E63358986D7E81C /* Pods */,
+				3CA90D9F93AB07DF5350C9DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,57 @@
 		8A1A75F21D5D6A1600851CE5 /* FoodWaste */ = {
 			isa = PBXGroup;
 			children = (
-				8A1A75F31D5D6A1600851CE5 /* AppDelegate.swift */,
-				8A1A75F51D5D6A1600851CE5 /* ViewController.swift */,
-				8A1A75F71D5D6A1600851CE5 /* Main.storyboard */,
-				8A1A75FD1D5D6A1600851CE5 /* Assets.xcassets */,
-				8A1A75FF1D5D6A1600851CE5 /* LaunchScreen.storyboard */,
-				8A1A76021D5D6A1600851CE5 /* Info.plist */,
-				8A1A75FA1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld */,
+				8A1A760E1D5D7A7900851CE5 /* Model */,
+				8A1A760D1D5D729900851CE5 /* Storyboards */,
+				8A1A760C1D5D728600851CE5 /* Others */,
+				8A1A760B1D5D726E00851CE5 /* DAO */,
+				8A1A760A1D5D725D00851CE5 /* Controllers */,
 			);
 			path = FoodWaste;
+			sourceTree = "<group>";
+		};
+		8A1A760A1D5D725D00851CE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A76081D5D71E500851CE5 /* RegisterViewController.swift */,
+				8A1A75F51D5D6A1600851CE5 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8A1A760B1D5D726E00851CE5 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A75FA1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		8A1A760C1D5D728600851CE5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A75F31D5D6A1600851CE5 /* AppDelegate.swift */,
+				8A1A75FD1D5D6A1600851CE5 /* Assets.xcassets */,
+				8A1A76021D5D6A1600851CE5 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		8A1A760D1D5D729900851CE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A75F71D5D6A1600851CE5 /* Main.storyboard */,
+				8A1A75FF1D5D6A1600851CE5 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A1A760E1D5D7A7900851CE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A760F1D5D7A8E00851CE5 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A1A76051D5D6A1600851CE5 /* Build configuration list for PBXNativeTarget "FoodWaste" */;
 			buildPhases = (
+				00C7D9DD544D0AB46D48E0CE /* Check Pods Manifest.lock */,
 				8A1A75EC1D5D6A1600851CE5 /* Sources */,
 				8A1A75ED1D5D6A1600851CE5 /* Frameworks */,
 				8A1A75EE1D5D6A1600851CE5 /* Resources */,
+				CABC2E7BA8CF75441B17F384 /* Embed Pods Frameworks */,
+				22A32A1DA2C9F0AD1FCC6019 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +206,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C7D9DD544D0AB46D48E0CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22A32A1DA2C9F0AD1FCC6019 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABC2E7BA8CF75441B17F384 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A1A75EC1D5D6A1600851CE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1A75F61D5D6A1600851CE5 /* ViewController.swift in Sources */,
+				8A1A75F61D5D6A1600851CE5 /* LoginViewController.swift in Sources */,
 				8A1A75FC1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld in Sources */,
 				8A1A75F41D5D6A1600851CE5 /* AppDelegate.swift in Sources */,
+				8A1A76101D5D7A8E00851CE5 /* User.swift in Sources */,
+				8A1A76091D5D71E500851CE5 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +374,7 @@
 		};
 		8A1A76061D5D6A1600851CE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCCEB31526FD71FD01489D2 /* Pods-FoodWaste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
@@ -262,6 +386,7 @@
 		};
 		8A1A76071D5D6A1600851CE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
@@ -290,6 +415,7 @@
 				8A1A76071D5D6A1600851CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

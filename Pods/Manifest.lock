@@ -1,0 +1,18 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - TextFieldEffects (1.2.0)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - MagicalRecord
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
+
+COCOAPODS: 0.39.0
