@@ -16,6 +16,7 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
     var qrCodeFrameView:UIView?
      let back = UIButton()
     var contGlobal = 0
+    var test = "Email:t@t-Data:25/08/2016-Produto:Arroz"
     override func viewDidLoad() {
         super.viewDidLoad()
         back.setTitle("Voltar", forState: .Normal)
@@ -82,7 +83,17 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
             }
         }
     }
-
+    func getDatafromQRCode(text:String)  -> (String,String,String)
+    {
+        var textDevided = text.componentsSeparatedByString("-")
+        print(textDevided)
+        var arrayNome = textDevided[0].componentsSeparatedByString(":")
+        var arrayData = textDevided[1].componentsSeparatedByString(":")
+        var arrayProdutos = textDevided[2].componentsSeparatedByString(":")
+        
+        return (arrayNome[1],arrayData[1],arrayProdutos[1])
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
