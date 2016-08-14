@@ -17,6 +17,10 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
      let back = UIButton()
     var contGlobal = 0
     var test = "Email:t@t-Data:25/08/2016-Produto:Arroz"
+    var data:String!
+    var email:String!
+    var produto:String!
+    var link:String!
     override func viewDidLoad() {
         super.viewDidLoad()
         back.setTitle("Voltar", forState: .Normal)
@@ -75,7 +79,8 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
             
             if metadataObj.stringValue != nil  && contGlobal==0 {
                 print(metadataObj.stringValue)
-               // link = metadataObj.stringValue
+                link = metadataObj.stringValue
+                (email,data,produto) = getDatafromQRCode(link)
                 dismissViewControllerAnimated(true, completion: nil)
                 
                 contGlobal += 1
@@ -83,7 +88,7 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
             }
         }
     }
-    func getDatafromQRCode(text:String)  -> (String,String,String)
+    func getDatafromQRCode(text:String)  -> (String!,String!,String!)
     {
         var textDevided = text.componentsSeparatedByString("-")
         print(textDevided)
