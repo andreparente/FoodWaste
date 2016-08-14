@@ -8,7 +8,8 @@
 
 import UIKit
 import TextFieldEffects
-
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -19,6 +20,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.secureTextEntry = true
+        passwordTextField.delegate = self
+        emailTxtField.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -46,9 +50,80 @@ class LoginViewController: UIViewController {
         } else {
             
             if self.validateEmail(emailTxtField.text!) {
-                //fazer login verificando a senha
                 
-                // performSegueWithIdentifier("LoginToMainViewController", sender: self)
+                //fazer login verificando a senha
+                FIRAuth.auth()?.signInWithEmail(emailTxtField.text!, password: passwordTextField.text!, completion: {
+                    user, error in
+                    
+                    if error != nil {
+                        print(error)
+                        
+                        if error!.code == FIRAuthErrorCode.ErrorCodeInvalidEmail.rawValue {
+                            
+                            print(error!.code)
+                            print(FIRAuthErrorCode.ErrorCodeInvalidEmail.rawValue)
+                            let alert = UIAlertController(title: "Warning", message: "Email not registered", preferredStyle: UIAlertControllerStyle.Alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                            
+                            alert.addAction(alertAction)
+                            self.presentViewController(alert, animated: true, completion: nil)
+                            print("email invalido!")
+                            
+                        }
+                        else if error!.code == FIRAuthErrorCode.ErrorCodeWrongPassword.rawValue {
+                            
+                            print(error!.code)
+                            print(FIRAuthErrorCode.ErrorCodeWrongPassword.rawValue)
+                            let alert = UIAlertController(title: "Warning", message: "Incorrect Password", preferredStyle: UIAlertControllerStyle.Alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                            
+                            alert.addAction(alertAction)
+                            self.presentViewController(alert, animated: true, completion: nil)
+
+                            print("senha incorreta")
+                            
+                        }
+                            
+                        else if error!.code == FIRAuthErrorCode.ErrorCodeNetworkError.rawValue {
+                            print(error!.code)
+                            print(FIRAuthErrorCode.ErrorCodeNetworkError.rawValue)
+                            print("Deu ruim na internet")
+                        }
+                        
+                    }
+                        
+                    else {
+                        
+                        globalUser = user
+                        
+                        
+                        
+                        if (globalUser!.emailVerified) {
+                            print("LOGOU USER EMAIL VERIFICADO")
+                        
+                            
+                            if defaults.boolForKey("deslogou") {
+                                self.dismissViewControllerAnimated(true, completion: nil)
+                            } else {
+                                
+                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsViewController") as! MenuViewController
+                                
+                                self.presentViewController(vc, animated: true, completion: nil)
+                            }
+                            defaults.setBool(true, forKey: "Logged")
+                        }
+                        else {
+                            let alert = UIAlertController(title: "Warning", message: "Please verify your email!", preferredStyle: UIAlertControllerStyle.Alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                            
+                            alert.addAction(alertAction)
+                            self.presentViewController(alert, animated: true, completion: nil)
+                        }
+                    }
+                })
+                
+                
             } else {
                 let alert = UIAlertController(title: "Warning", message: "your email is not correct", preferredStyle: UIAlertControllerStyle.Alert)
                 let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
@@ -57,6 +132,12 @@ class LoginViewController: UIViewController {
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
+        
+        
+        // __________________ ------------------------------------ ______________________
+        
+        
+
     }
     
     func validateEmail(candidate: String) -> Bool {
@@ -69,3 +150,9 @@ class LoginViewController: UIViewController {
     }
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

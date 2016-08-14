@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -32,4 +32,19 @@ class MenuViewController: UIViewController {
     }
     */
 
+    @IBAction func logOutAction(sender: UIButton) {
+        defaults.setBool(false, forKey: "Logged")
+        defaults.setBool(true, forKey: "deslogou")
+        do {
+            
+            try FIRAuth.auth()?.signOut()
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsViewController") as! LoginViewController
+            self.presentViewController(vc, animated: true, completion: nil)
+        } catch {
+            print(error)
+        }
+
+    }
 }

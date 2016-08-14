@@ -8,6 +8,11 @@
 
 import UIKit
 import CoreData
+import FirebaseAuth
+import Firebase
+
+public var globalUser: FIRUser!
+public let defaults = NSUserDefaults.standardUserDefaults()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +22,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if defaults.boolForKey("Logged") {
+            
+            //ta logado vai pra main
+            let user = FIRAuth.auth()?.currentUser
+            print(user)
+            
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+            
+        } else {
+            
+            //nao ta logado vai pro login
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+
         return true
     }
 

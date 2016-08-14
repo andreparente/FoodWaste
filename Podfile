@@ -5,7 +5,9 @@ use_frameworks!
 
 target 'FoodWaste' do
  pod 'DZNEmptyDataSet'
- pod 'MagicalRecord'
  pod 'TextFieldEffects'
+ pod 'Firebase'
+ pod 'Firebase/Auth'
+ pod 'Firebase/Database'
 end
 
