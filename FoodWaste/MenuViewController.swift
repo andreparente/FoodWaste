@@ -13,7 +13,7 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Database().retrieveUser()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +22,9 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        Database().retrieveUser()
+    }
 
     /*
     // MARK: - Navigation
@@ -41,7 +44,7 @@ class MenuViewController: UIViewController {
             try FIRAuth.auth()?.signOut()
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsViewController") as! LoginViewController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController
             self.presentViewController(vc, animated: true, completion: nil)
         } catch {
             print(error)

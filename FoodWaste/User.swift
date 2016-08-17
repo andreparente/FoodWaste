@@ -24,6 +24,12 @@ public class User {
         self.points = points
     }
     
+    init(email: String, password: String, points: Double) {
+        self.email = email
+        self.password = password
+        self.points = points
+    }
+    
     func addPoints(points: Double) {
         self.points = self.points + points
     }

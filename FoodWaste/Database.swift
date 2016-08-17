@@ -44,11 +44,11 @@ public class Database {
     func postUser() {
         
         
-        let postUser : [String : AnyObject] = ["name" : localUser.name, "email" : localUser.email, "points" : localUser.points, "uid" : globalUser.uid]
+        let postUser : [String : AnyObject] = ["name" : localUser.name, "email" : localUser.email, "password" : localUser.password, "points" : localUser.points]
         
         let dataBaseRef = FIRDatabase.database().reference()
         
-        dataBaseRef.child("User").childByAutoId().setValue(postUser)
+        dataBaseRef.child("Users").child(globalUser!.uid).setValue(postUser)
 
         
     }
@@ -56,17 +56,23 @@ public class Database {
     func retrieveUser() {
         
         let dataBaseRef = FIRDatabase.database().reference()
+
         
         dataBaseRef.child("Users").child(globalUser.uid).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            
             // Get user value
             let points = snapshot.value!["points"] as! Double
             let name = snapshot.value!["name"] as! String
+            let password = snapshot.value!["password"] as! String
             
+            localUser = User(email: globalUser.email!, password: password, points: 0)
             localUser.points = points
             localUser.name = name
             
             //e aqui carrega a pagina!!
-            print(localUser.name, "  ", localUser.email, "  ",localUser.password)
+            print(localUser.name)
+            print(localUser.password)
+            print(localUser.email)
 
         }) { (error) in
             print(error.localizedDescription)

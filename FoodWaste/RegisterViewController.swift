@@ -69,12 +69,14 @@ class RegisterViewController: UIViewController {
                 
             else {
                 print("CRIEI PORRA")
+                globalUser = user
                 
                 localUser = User(name: self.name.text!, email: self.email.text!, password: self.password.text!, points: 0)
                 
-                
+                Database().postUser()
                 
                 user!.sendEmailVerificationWithCompletion({ (error) in
+                    
                 })
                 
                 let alert = UIAlertController(title: "Warning", message: "You will receive an verification email, please verify your email to login!", preferredStyle: UIAlertControllerStyle.Alert)
@@ -83,9 +85,6 @@ class RegisterViewController: UIViewController {
                 
                 alert.addAction(alertAction)
                 self.presentViewController(alert, animated: true, completion: nil)
-                
-
-                
             }
         })
 

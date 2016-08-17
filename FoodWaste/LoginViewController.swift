@@ -98,8 +98,8 @@ class LoginViewController: UIViewController {
                   
                         if (globalUser!.emailVerified) {
                             print("LOGOU USER EMAIL VERIFICADO")
-                        
-                            Database().postUser()
+                            
+                            localUser = User(email: self.emailTxtField.text!, password: self.passwordTextField.text!, points: 0)
                             
                             if defaults.boolForKey("deslogou") {
                                 self.dismissViewControllerAnimated(true, completion: nil)

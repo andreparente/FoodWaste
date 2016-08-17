@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -31,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             //ta logado vai pra main
             let user = FIRAuth.auth()?.currentUser
+            globalUser = FIRAuth.auth()?.currentUser
             print(user)
             
             let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController")
