@@ -8,11 +8,12 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Database().retrieveUser()
         // Do any additional setup after loading the view.
     }
 

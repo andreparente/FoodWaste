@@ -8,12 +8,19 @@
 
 import Foundation
 
+public var places : [Place] = []
+
 public class Place
 {
-    var adress:String!
+    var title:String!
+    var xCoord: Double!
+    var yCoord: Double!
     
-    init(adress:String)
-    {
-        self.adress = adress
+    init(title: String, x: Double, y: Double) {
+        
+        self.title = title
+        self.xCoord = x
+        self.yCoord = y
+        
     }
 }

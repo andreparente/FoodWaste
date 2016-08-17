@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -459,6 +459,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9O6-jA-XHx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fiA-f0-Da0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-VY-PDa">
@@ -540,17 +541,17 @@
                                 <exclude reference="fq3-Gj-YEE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GBD-L3-2dI"/>
-                                <exclude reference="mKp-rG-FTQ"/>
-                                <exclude reference="xGD-d0-qdb"/>
-                                <exclude reference="Uee-lU-oWj"/>
                                 <exclude reference="LHL-0j-vE3"/>
                                 <exclude reference="PZk-C5-Tjd"/>
-                                <exclude reference="Kxa-mq-LgW"/>
-                                <exclude reference="NKV-sV-1K7"/>
                                 <exclude reference="8b7-yn-gy4"/>
                                 <exclude reference="RNc-cI-REb"/>
                                 <exclude reference="UY0-Nh-pdH"/>
+                                <exclude reference="Kxa-mq-LgW"/>
+                                <exclude reference="NKV-sV-1K7"/>
+                                <exclude reference="Uee-lU-oWj"/>
+                                <exclude reference="GBD-L3-2dI"/>
+                                <exclude reference="mKp-rG-FTQ"/>
+                                <exclude reference="xGD-d0-qdb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -562,17 +563,17 @@
                                 <include reference="fq3-Gj-YEE"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GBD-L3-2dI"/>
-                                <include reference="mKp-rG-FTQ"/>
-                                <include reference="xGD-d0-qdb"/>
-                                <include reference="Uee-lU-oWj"/>
                                 <include reference="LHL-0j-vE3"/>
                                 <include reference="PZk-C5-Tjd"/>
-                                <include reference="Kxa-mq-LgW"/>
-                                <include reference="NKV-sV-1K7"/>
                                 <include reference="8b7-yn-gy4"/>
                                 <include reference="RNc-cI-REb"/>
                                 <include reference="UY0-Nh-pdH"/>
+                                <include reference="Kxa-mq-LgW"/>
+                                <include reference="NKV-sV-1K7"/>
+                                <include reference="Uee-lU-oWj"/>
+                                <include reference="GBD-L3-2dI"/>
+                                <include reference="mKp-rG-FTQ"/>
+                                <include reference="xGD-d0-qdb"/>
                             </mask>
                         </variation>
                     </view>
@@ -590,6 +591,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nfT-PY-AWu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tJ1-Ha-j4r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kp5-fN-4fQ">
@@ -608,7 +610,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-QH-ear" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-QH-ear" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -635,7 +637,7 @@
                                     <rect key="frame" x="329" y="34" width="51" height="33"/>
                                 </variation>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -693,14 +695,14 @@
                                 <exclude reference="XDY-zP-IoS"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9gD-Bq-mYt"/>
+                                <exclude reference="Zdz-Mg-emy"/>
                                 <exclude reference="E6C-k3-jlX"/>
                                 <exclude reference="YiK-BT-o1K"/>
                                 <exclude reference="K2I-Ss-AHD"/>
                                 <exclude reference="QJz-8g-SqX"/>
                                 <exclude reference="gNF-CJ-Nx7"/>
                                 <exclude reference="poU-D2-QwT"/>
-                                <exclude reference="9gD-Bq-mYt"/>
-                                <exclude reference="Zdz-Mg-emy"/>
                                 <exclude reference="FwW-wW-bJg"/>
                                 <exclude reference="NNZ-jm-b6z"/>
                                 <exclude reference="W4a-ZA-TiR"/>
@@ -720,14 +722,14 @@
                                 <include reference="XDY-zP-IoS"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9gD-Bq-mYt"/>
+                                <include reference="Zdz-Mg-emy"/>
                                 <include reference="E6C-k3-jlX"/>
                                 <include reference="YiK-BT-o1K"/>
                                 <include reference="K2I-Ss-AHD"/>
                                 <include reference="QJz-8g-SqX"/>
                                 <exclude reference="gNF-CJ-Nx7"/>
                                 <include reference="poU-D2-QwT"/>
-                                <include reference="9gD-Bq-mYt"/>
-                                <include reference="Zdz-Mg-emy"/>
                                 <include reference="FwW-wW-bJg"/>
                                 <include reference="NNZ-jm-b6z"/>
                                 <include reference="W4a-ZA-TiR"/>
@@ -753,6 +755,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ivs-6p-LoO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GF7-cb-gGq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-PR-7hJ">
@@ -791,7 +794,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-Jj-fLg" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-Jj-fLg" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -808,7 +811,7 @@
                                     <rect key="frame" x="139" y="287" width="122" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-YA-sfu" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-YA-sfu" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -825,7 +828,7 @@
                                     <rect key="frame" x="139" y="337" width="122" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-TY-SxA" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-TY-SxA" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -842,7 +845,7 @@
                                     <rect key="frame" x="140" y="387" width="122" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-nw-mzX" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-nw-mzX" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -904,28 +907,28 @@
                                 <exclude reference="4o3-XQ-cs6"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="CgD-G8-G3Q"/>
+                                <exclude reference="m7A-lO-ZnU"/>
+                                <exclude reference="3Tx-mv-flK"/>
+                                <exclude reference="pBQ-wY-uvB"/>
                                 <exclude reference="3po-RI-g7D"/>
                                 <exclude reference="Qxf-GU-PM2"/>
                                 <exclude reference="4gG-E2-Mr8"/>
                                 <exclude reference="7O0-07-esC"/>
                                 <exclude reference="8fN-Nz-N1n"/>
                                 <exclude reference="GsO-xO-sGM"/>
-                                <exclude reference="CgD-G8-G3Q"/>
-                                <exclude reference="m7A-lO-ZnU"/>
-                                <exclude reference="3Tx-mv-flK"/>
-                                <exclude reference="pBQ-wY-uvB"/>
-                                <exclude reference="42m-A5-maH"/>
-                                <exclude reference="HjM-2q-piQ"/>
-                                <exclude reference="f9R-Zy-0zs"/>
-                                <exclude reference="8L4-MN-Wz5"/>
-                                <exclude reference="Byi-xX-iF3"/>
-                                <exclude reference="xpv-8i-VhH"/>
-                                <exclude reference="98u-pm-ZLC"/>
-                                <exclude reference="uzN-Qs-xmt"/>
-                                <exclude reference="wUY-VG-Xaf"/>
                                 <exclude reference="GIU-od-4cc"/>
                                 <exclude reference="mk1-N6-V9x"/>
                                 <exclude reference="std-wW-REQ"/>
+                                <exclude reference="98u-pm-ZLC"/>
+                                <exclude reference="uzN-Qs-xmt"/>
+                                <exclude reference="wUY-VG-Xaf"/>
+                                <exclude reference="8L4-MN-Wz5"/>
+                                <exclude reference="Byi-xX-iF3"/>
+                                <exclude reference="xpv-8i-VhH"/>
+                                <exclude reference="42m-A5-maH"/>
+                                <exclude reference="HjM-2q-piQ"/>
+                                <exclude reference="f9R-Zy-0zs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -940,28 +943,28 @@
                                 <include reference="4o3-XQ-cs6"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="CgD-G8-G3Q"/>
+                                <include reference="m7A-lO-ZnU"/>
+                                <include reference="3Tx-mv-flK"/>
+                                <include reference="pBQ-wY-uvB"/>
                                 <include reference="3po-RI-g7D"/>
                                 <include reference="Qxf-GU-PM2"/>
                                 <include reference="4gG-E2-Mr8"/>
                                 <include reference="7O0-07-esC"/>
                                 <include reference="8fN-Nz-N1n"/>
                                 <include reference="GsO-xO-sGM"/>
-                                <include reference="CgD-G8-G3Q"/>
-                                <include reference="m7A-lO-ZnU"/>
-                                <include reference="3Tx-mv-flK"/>
-                                <include reference="pBQ-wY-uvB"/>
-                                <include reference="42m-A5-maH"/>
-                                <include reference="HjM-2q-piQ"/>
-                                <include reference="f9R-Zy-0zs"/>
-                                <include reference="8L4-MN-Wz5"/>
-                                <include reference="Byi-xX-iF3"/>
-                                <include reference="xpv-8i-VhH"/>
-                                <include reference="98u-pm-ZLC"/>
-                                <include reference="uzN-Qs-xmt"/>
-                                <include reference="wUY-VG-Xaf"/>
                                 <include reference="GIU-od-4cc"/>
                                 <include reference="mk1-N6-V9x"/>
                                 <include reference="std-wW-REQ"/>
+                                <include reference="98u-pm-ZLC"/>
+                                <include reference="uzN-Qs-xmt"/>
+                                <include reference="wUY-VG-Xaf"/>
+                                <include reference="8L4-MN-Wz5"/>
+                                <include reference="Byi-xX-iF3"/>
+                                <include reference="xpv-8i-VhH"/>
+                                <include reference="42m-A5-maH"/>
+                                <include reference="HjM-2q-piQ"/>
+                                <include reference="f9R-Zy-0zs"/>
                             </mask>
                         </variation>
                     </view>

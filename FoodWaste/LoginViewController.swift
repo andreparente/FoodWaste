@@ -95,19 +95,18 @@ class LoginViewController: UIViewController {
                     else {
                         
                         globalUser = user
-                        
-                        
-                        
+                  
                         if (globalUser!.emailVerified) {
                             print("LOGOU USER EMAIL VERIFICADO")
                         
+                            Database().postUser()
                             
                             if defaults.boolForKey("deslogou") {
                                 self.dismissViewControllerAnimated(true, completion: nil)
                             } else {
                                 
                                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsViewController") as! MenuViewController
+                                let vc = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MenuViewController
                                 
                                 self.presentViewController(vc, animated: true, completion: nil)
                             }

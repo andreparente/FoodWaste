@@ -69,6 +69,11 @@ class RegisterViewController: UIViewController {
                 
             else {
                 print("CRIEI PORRA")
+                
+                localUser = User(name: self.name.text!, email: self.email.text!, password: self.password.text!, points: 0)
+                
+                
+                
                 user!.sendEmailVerificationWithCompletion({ (error) in
                 })
                 
