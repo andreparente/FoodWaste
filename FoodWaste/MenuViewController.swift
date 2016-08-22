@@ -11,6 +11,9 @@ import Firebase
 import FirebaseAuth
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelPoints: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +26,15 @@ class MenuViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        Database().retrieveUser()
+        
+        if defaults.boolForKey("Logged") {
+            Database().retrieveUser(self)
+            labelName.hidden = true
+            labelPoints.hidden = true
+            indicator.startAnimating()
+        } 
+        
+        
     }
 
     /*
@@ -39,6 +50,7 @@ class MenuViewController: UIViewController {
     @IBAction func logOutAction(sender: UIButton) {
         defaults.setBool(false, forKey: "Logged")
         defaults.setBool(true, forKey: "deslogou")
+        defaults.synchronize()
         do {
             
             try FIRAuth.auth()?.signOut()
@@ -50,5 +62,9 @@ class MenuViewController: UIViewController {
             print(error)
         }
 
+    }
+    @IBAction func pontosDeColeta(sender: AnyObject) {
+        
+        performSegueWithIdentifier("MainToPontosDeColeta", sender: self)
     }
 }

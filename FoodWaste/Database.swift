@@ -53,7 +53,7 @@ public class Database {
         
     }
     
-    func retrieveUser() {
+    func retrieveUser(vc: MenuViewController) {
         
         let dataBaseRef = FIRDatabase.database().reference()
 
@@ -73,6 +73,15 @@ public class Database {
             print(localUser.name)
             print(localUser.password)
             print(localUser.email)
+            
+            vc.labelName.text = localUser.name
+            vc.labelPoints.text = "\(localUser.points) points"
+            
+            vc.labelName.hidden = false
+            vc.labelPoints.hidden = false
+            vc.indicator.stopAnimating()
+            vc.indicator.hidden = true
+            
 
         }) { (error) in
             print(error.localizedDescription)

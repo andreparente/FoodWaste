@@ -56,21 +56,11 @@ class LoginViewController: UIViewController {
                     user, error in
                     
                     if error != nil {
-                        print(error)
                         
-                        if error!.code == FIRAuthErrorCode.ErrorCodeInvalidEmail.rawValue {
-                            
-                            print(error!.code)
-                            print(FIRAuthErrorCode.ErrorCodeInvalidEmail.rawValue)
-                            let alert = UIAlertController(title: "Warning", message: "Email not registered", preferredStyle: UIAlertControllerStyle.Alert)
-                            let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
-                            
-                            alert.addAction(alertAction)
-                            self.presentViewController(alert, animated: true, completion: nil)
-                            print("email invalido!")
-                            
-                        }
-                        else if error!.code == FIRAuthErrorCode.ErrorCodeWrongPassword.rawValue {
+                        
+
+
+                        if error!.code == FIRAuthErrorCode.ErrorCodeWrongPassword.rawValue {
                             
                             print(error!.code)
                             print(FIRAuthErrorCode.ErrorCodeWrongPassword.rawValue)
@@ -88,6 +78,13 @@ class LoginViewController: UIViewController {
                             print(error!.code)
                             print(FIRAuthErrorCode.ErrorCodeNetworkError.rawValue)
                             print("Deu ruim na internet")
+                        } else {
+                            
+                            let alert = UIAlertController(title: "Error", message: "Email not registered", preferredStyle: UIAlertControllerStyle.Alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                            
+                            alert.addAction(alertAction)
+                            self.presentViewController(alert, animated: true, completion: nil)
                         }
                         
                     }
@@ -100,17 +97,14 @@ class LoginViewController: UIViewController {
                             print("LOGOU USER EMAIL VERIFICADO")
                             
                             localUser = User(email: self.emailTxtField.text!, password: self.passwordTextField.text!, points: 0)
+                                
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MenuViewController
                             
-                            if defaults.boolForKey("deslogou") {
-                                self.dismissViewControllerAnimated(true, completion: nil)
-                            } else {
-                                
-                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                let vc = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MenuViewController
-                                
-                                self.presentViewController(vc, animated: true, completion: nil)
-                            }
+                            self.presentViewController(vc, animated: true, completion: nil)
+
                             defaults.setBool(true, forKey: "Logged")
+                            defaults.synchronize()
                         }
                         else {
                             let alert = UIAlertController(title: "Warning", message: "Please verify your email!", preferredStyle: UIAlertControllerStyle.Alert)
