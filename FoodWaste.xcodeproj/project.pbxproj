@@ -15,6 +15,7 @@
 		8A1A76011D5D6A1600851CE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1A75FF1D5D6A1600851CE5 /* LaunchScreen.storyboard */; };
 		8A1A76091D5D71E500851CE5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A76081D5D71E500851CE5 /* RegisterViewController.swift */; };
 		8A1A76101D5D7A8E00851CE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A760F1D5D7A8E00851CE5 /* User.swift */; };
+		8A31D6EB1D6AC20F00A22D16 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31D6EA1D6AC20F00A22D16 /* ForgotPasswordViewController.swift */; };
 		8AD8F3501D5FFE3A00104D0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AD8F34F1D5FFE3A00104D0D /* GoogleService-Info.plist */; };
 		8AF6036C1D64D2A1001833C5 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6036B1D64D2A1001833C5 /* Database.swift */; };
 		9C8912301D61194600F9767F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89122F1D61194600F9767F /* Place.swift */; };
@@ -36,6 +37,7 @@
 		8A1A76021D5D6A1600851CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1A76081D5D71E500851CE5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8A1A760F1D5D7A8E00851CE5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A31D6EA1D6AC20F00A22D16 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		8AD8F34F1D5FFE3A00104D0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8AF6036B1D64D2A1001833C5 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		9C89122F1D61194600F9767F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				EF4B30BF1D5FB8C600565133 /* PontosDeColetaViewController.swift */,
 				8A1A75F51D5D6A1600851CE5 /* LoginViewController.swift */,
 				9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */,
+				8A31D6EA1D6AC20F00A22D16 /* ForgotPasswordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				EF4B30C01D5FB8C600565133 /* PontosDeColetaViewController.swift in Sources */,
 				9CB0BB6F1D5E069800AAB7E4 /* QRCodeViewController.swift in Sources */,
+				8A31D6EB1D6AC20F00A22D16 /* ForgotPasswordViewController.swift in Sources */,
 				8A1A75F61D5D6A1600851CE5 /* LoginViewController.swift in Sources */,
 				8A1A75FC1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld in Sources */,
 				EF4B30BE1D5FB8B500565133 /* MenuViewController.swift in Sources */,
