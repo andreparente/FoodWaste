@@ -8,11 +8,36 @@
 
 import UIKit
 import MapKit
+class CustomAnnotation: NSObject, MKAnnotation {
+    init(coordinate:CLLocationCoordinate2D,title:String,subtitle:String) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        super.init()
+    }
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var subtitle: String?
+}
+class PontosDeColetaViewController: UIViewController,MKMapViewDelegate{
 
-class PontosDeColetaViewController: UIViewController {
-
+    @IBOutlet weak var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.map.delegate = self
+        let location = CLLocation(latitude: -22.9068, longitude: -43.1729)
+        let regionRadius: CLLocationDistance = 100000
+        func centerMapOnLocation(location: CLLocation) {
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 2.0, regionRadius * 2.0)
+            map.setRegion(coordinateRegion, animated: true)
+        }
+        let location2 = CLLocation(latitude: -22.9767, longitude: -43.3946)
+        centerMapOnLocation(location2)
+        let ann=CustomAnnotation(coordinate: location2.coordinate, title: "Parque Olímpico",subtitle: "Barra Da Tijuca")
+        self.map.addAnnotation(ann)
+        let location3 = CLLocation(latitude: -22.8933, longitude: -43.2923)
+        let ann2=CustomAnnotation(coordinate: location3.coordinate, title: "Estádio Olímpico",subtitle: "Engenhão")
+        self.map.addAnnotation(ann2)
 
         // Do any additional setup after loading the view.
     }
