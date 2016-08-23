@@ -20,6 +20,7 @@
 		8AF6036C1D64D2A1001833C5 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6036B1D64D2A1001833C5 /* Database.swift */; };
 		9C8912301D61194600F9767F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89122F1D61194600F9767F /* Place.swift */; };
 		9CB0BB6F1D5E069800AAB7E4 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */; };
+		9CFBE18F1D6C8CB90000A5C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */; };
 		AFDC3C3A95177CD498E2FCA3 /* Pods_FoodWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */; };
 		EF4B30BE1D5FB8B500565133 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B30BD1D5FB8B500565133 /* MenuViewController.swift */; };
 		EF4B30C01D5FB8C600565133 /* PontosDeColetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B30BF1D5FB8C600565133 /* PontosDeColetaViewController.swift */; };
@@ -42,6 +43,7 @@
 		8AF6036B1D64D2A1001833C5 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		9C89122F1D61194600F9767F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.release.xcconfig"; sourceTree = "<group>"; };
 		BDCCEB31526FD71FD01489D2 /* Pods-FoodWaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.debug.xcconfig"; sourceTree = "<group>"; };
 		EF4B30BD1D5FB8B500565133 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				8A1A75F51D5D6A1600851CE5 /* LoginViewController.swift */,
 				9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */,
 				8A31D6EA1D6AC20F00A22D16 /* ForgotPasswordViewController.swift */,
+				9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				8A1A75F41D5D6A1600851CE5 /* AppDelegate.swift in Sources */,
 				9C8912301D61194600F9767F /* Place.swift in Sources */,
 				8A1A76101D5D7A8E00851CE5 /* User.swift in Sources */,
+				9CFBE18F1D6C8CB90000A5C5 /* TableViewCell.swift in Sources */,
 				8AF6036C1D64D2A1001833C5 /* Database.swift in Sources */,
 				8A1A76091D5D71E500851CE5 /* RegisterViewController.swift in Sources */,
 			);

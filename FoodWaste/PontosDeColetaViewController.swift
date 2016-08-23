@@ -19,8 +19,9 @@ class CustomAnnotation: NSObject, MKAnnotation {
     var title: String?
     var subtitle: String?
 }
-class PontosDeColetaViewController: UIViewController,MKMapViewDelegate{
+class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableViewDelegate,UITableViewDataSource{
 
+    @IBOutlet weak var table: UITableView!
     @IBOutlet weak var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +47,15 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.table.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
+        return cell
+    }
     /*
     // MARK: - Navigation
 
