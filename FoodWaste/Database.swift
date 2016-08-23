@@ -13,9 +13,9 @@ import FirebaseDatabase
 
 public class Database {
     
-    func postPlace(/*something to post*/ placeTitle: String, xCoord: Double, yCoord: Double) {
+    func postPlace(placeTitle: String, address: String) {
         
-        let postPlace : [String : AnyObject] = ["name" : placeTitle, "x" : xCoord, "y" : yCoord]
+        let postPlace : [String : AnyObject] = ["name" : placeTitle, "address" : address]
         
         let dataBaseRef = FIRDatabase.database().reference()
         
@@ -33,10 +33,9 @@ public class Database {
         snapshot in
             
             let name = snapshot.value!["name"] as! String
-            let xCoord = snapshot.value!["x"] as! Double
-            let yCoord = snapshot.value!["y"] as! Double
+            let address = snapshot.value!["address"] as! String
             
-            places.append(Place(title: name, x: xCoord, y: yCoord))
+            places.append(Place(title: name, address: address))
             
         })
     }

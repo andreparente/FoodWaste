@@ -11,12 +11,16 @@ import TextFieldEffects
 import Firebase
 import FirebaseAuth
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
    
     @IBOutlet weak var name: HoshiTextField!
     @IBOutlet weak var email: HoshiTextField!
     @IBOutlet weak var password: HoshiTextField!
     @IBOutlet weak var confirmPassword: HoshiTextField!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var addPhotoButton: UIButton!
+    
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,7 @@ class RegisterViewController: UIViewController {
         email.delegate = self
         password.delegate = self
         confirmPassword.delegate = self
+        imagePicker.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -93,8 +98,43 @@ class RegisterViewController: UIViewController {
     @IBAction func cancelAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func addPhotoAction(sender: UIButton) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+        
+    }
+    
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            profileImage.contentMode = .ScaleAspectFit
+            profileImage.image = pickedImage
+        }
+        
+        
+         let imageURL = info[UIImagePickerControllerReferenceURL] as! NSURL
+         let imageName = imageURL.path!
+         let documentDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! as String
+         let localPath = documentDirectory.URLByAppendingPathComponent(imageName)
+         
+         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+         let data = UIImagePNGRepresentation(image)
+         data.writeToFile(localPath, atomically: true)
+         
+         let imageData = NSData(contentsOfFile: localPath)!
+         let photoURL = NSURL(fileURLWithPath: localPath)
+         let imageWithData = UIImage(data: imageData)!
+        
+        picker.dismissViewControllerAnimated(true, completion: nil)
+
+
     }
 
 }
