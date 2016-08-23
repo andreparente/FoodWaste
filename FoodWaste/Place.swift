@@ -13,14 +13,12 @@ public var places : [Place] = []
 public class Place
 {
     var title:String!
-    var xCoord: Double!
-    var yCoord: Double!
+    var address: String!
     
-    init(title: String, x: Double, y: Double) {
+    init(title: String, address: String) {
         
         self.title = title
-        self.xCoord = x
-        self.yCoord = y
+        self.address = address
         
     }
 }

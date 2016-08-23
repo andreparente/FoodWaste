@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQs-oM-bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5" y="-152.5"/>
+            <point key="canvasLocation" x="777.75" y="-152.625"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="QU6-ua-kcy">
@@ -324,6 +324,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-ZN-HBY">
                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="43.5"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="92" height="44"/>
+                                                    </variation>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh0-Pp-tox">
                                                     <rect key="frame" x="102" y="22" width="162" height="21"/>
@@ -514,7 +517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE2-n6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645.5" y="-152.5"/>
+            <point key="canvasLocation" x="3326.25" y="544.875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pBN-ma-qdr">
@@ -538,8 +541,7 @@
                                         <exclude reference="8F9-Az-t6P"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="120" y="289" width="160" height="160"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="8F9-Az-t6P"/>
                                     </mask>
@@ -550,18 +552,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="136" y="642" width="128" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não é cadastrado?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-Iv-Bjy">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="128" y="721" width="144" height="21"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-1p-JwT">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -569,9 +565,9 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="175" y="668" width="51" height="33"/>
-                                </variation>
+                                <connections>
+                                    <segue destination="VBi-uo-25j" kind="show" id="OIJ-bm-09C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-Gj-YEE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -579,9 +575,9 @@
                                 <state key="normal" title="Criar Conta">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="153" y="747" width="94" height="33"/>
-                                </variation>
+                                <connections>
+                                    <segue destination="Zii-rx-VKS" kind="show" id="Ufs-Lg-PbS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -646,7 +642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MpK-Se-WiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2403" y="-126"/>
+            <point key="canvasLocation" x="-1426.5" y="882.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SU5-sg-TaC">
@@ -689,9 +685,6 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="307" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POY-u1-0Oo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -699,9 +692,6 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="329" y="34" width="51" height="33"/>
-                                </variation>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
@@ -716,9 +706,6 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="357" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDY-zP-IoS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -726,9 +713,6 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.72156862745098038" green="0.30196078431372547" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="34" width="73" height="33"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -810,7 +794,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSa-wE-iQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="-126"/>
+            <point key="canvasLocation" x="-463.5" y="486"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bII-5p-ptF">
@@ -830,9 +814,6 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.72156862749999995" green="0.30196078430000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="34" width="73" height="33"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-4Y-yP0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -840,9 +821,6 @@
                                 <state key="normal" title="Criar Conta">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="286" y="34" width="94" height="33"/>
-                                </variation>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-S9-KJj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -873,9 +851,6 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="287" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-YA-sfu" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
@@ -890,9 +865,6 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="337" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-TY-SxA" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
@@ -907,9 +879,6 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="140" y="387" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-nw-mzX" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
@@ -924,16 +893,10 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="140" y="437" width="122" height="30"/>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4o3-XQ-cs6">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="adicionar foto"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="170" y="141" width="63" height="48"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1037,7 +1000,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUx-0k-UCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3771" y="-126"/>
+            <point key="canvasLocation" x="-471" y="1279.5"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="HWZ-1M-AEN">
@@ -1048,7 +1011,7 @@
                         <viewControllerLayoutGuide type="bottom" id="r9T-lj-yF6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uo9-s2-tVK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please write down your email so we can send a password redefinition to you" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IUX-nG-K1w">
@@ -1062,18 +1025,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRz-7d-WiA">
-                                <rect key="frame" x="183" y="330" width="55" height="30"/>
-                                <state key="normal" title="Confirm"/>
-                                <connections>
-                                    <action selector="changePasswordAction:" destination="1CH-HT-aMm" eventType="touchUpInside" id="ODe-uc-hd6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7C1-1l-yzv">
                                 <rect key="frame" x="298" y="36" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelAction:" destination="1CH-HT-aMm" eventType="touchUpInside" id="DYg-7M-5N9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRz-7d-WiA">
+                                <rect key="frame" x="183" y="330" width="55" height="30"/>
+                                <state key="normal" title="Confirm"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="330" width="55" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changePasswordAction:" destination="1CH-HT-aMm" eventType="touchUpInside" id="ODe-uc-hd6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1085,7 +1051,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Muq-IF-XOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="-895"/>
+            <point key="canvasLocation" x="-471" y="1990.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1112,6 +1078,9 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="200" width="97" height="40"/>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhj-71-fW4">
                                 <rect key="frame" x="168" y="390" width="40" height="32"/>
@@ -1130,9 +1099,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-RO-WO7">
                                 <rect key="frame" x="126" y="501" width="123" height="30"/>
                                 <state key="normal" title="Forgot Password?"/>
-                                <connections>
-                                    <segue destination="1CH-HT-aMm" kind="show" id="GdW-vE-Nab"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-qy-Xy7" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="139" y="307" width="97" height="30"/>
@@ -1161,7 +1127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="561.5" y="-152.5"/>
+            <point key="canvasLocation" x="-137.25" y="-158.625"/>
         </scene>
     </scenes>
     <resources>
