@@ -32,6 +32,10 @@ class LoginViewController: UIViewController {
     }
     
     
+    @IBAction func cancelAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func signUpAction(sender: UIButton) {
         performSegueWithIdentifier("LoginToRegisterViewController", sender: self)
     }

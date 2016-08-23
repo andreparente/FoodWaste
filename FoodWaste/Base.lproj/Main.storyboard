@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vIL-lL-m5h">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,114 +8,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Register View Controller-->
-        <scene sceneID="Z5k-aj-ElQ">
-            <objects>
-                <viewController id="kkm-jw-aab" customClass="RegisterViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5of-jB-q8C"/>
-                        <viewControllerLayoutGuide type="bottom" id="KWe-D0-Y1X"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hBT-Qh-xBD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT2-eO-9bh" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="126" y="143" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778220000001" green="0.70210242150000002" blue="0.12450311090000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-Rk-YXJ" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="126" y="217" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.92291803009999995" green="0.92129969789999999" blue="0.91696825969999995" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778220000001" green="0.70210242150000002" blue="0.12450311090000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeD-T5-i7h">
-                                <rect key="frame" x="160" y="456" width="55" height="30"/>
-                                <state key="normal" title="Confirm"/>
-                                <connections>
-                                    <action selector="registerAction:" destination="kkm-jw-aab" eventType="touchUpInside" id="7Mi-cd-WXH"/>
-                                </connections>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvO-Gz-1N9">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Register" id="qNj-N6-dyz"/>
-                                </items>
-                            </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-Bw-j9y" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="126" y="72" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.92291803009999995" green="0.92129969789999999" blue="0.91696825969999995" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778220000001" green="0.70210242150000002" blue="0.12450311090000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRb-i1-II5" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="126" y="294" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778220000001" green="0.70210242150000002" blue="0.12450311090000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-Fs-tkB">
-                                <rect key="frame" x="307" y="28" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="cancelAction:" destination="kkm-jw-aab" eventType="touchUpInside" id="9El-j0-74B"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="hvO-Gz-1N9"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="confirmPassword" destination="tRb-i1-II5" id="PKs-OE-YJs"/>
-                        <outlet property="email" destination="WT2-eO-9bh" id="P6P-Xl-Ovs"/>
-                        <outlet property="name" destination="HaX-Bw-j9y" id="l0V-HH-Dyw"/>
-                        <outlet property="password" destination="G6a-Rk-YXJ" id="1g3-4G-ByZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tQs-oM-bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="777.75" y="-152.625"/>
-        </scene>
         <!--Menu View Controller-->
         <scene sceneID="QU6-ua-kcy">
             <objects>
@@ -519,10 +411,10 @@
             </objects>
             <point key="canvasLocation" x="3326.25" y="544.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="pBN-ma-qdr">
             <objects>
-                <viewController id="vIL-lL-m5h" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitialViewController" id="vIL-lL-m5h" customClass="InitialViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uTk-tg-6IK"/>
                         <viewControllerLayoutGuide type="bottom" id="9O6-jA-XHx"/>
@@ -566,7 +458,8 @@
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VBi-uo-25j" kind="show" id="OIJ-bm-09C"/>
+                                    <action selector="goToLoginAction:" destination="vIL-lL-m5h" eventType="touchUpInside" id="81y-BG-vJF"/>
+                                    <segue destination="VBi-uo-25j" kind="show" identifier="goToLogin" id="OIJ-bm-09C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-Gj-YEE">
@@ -576,7 +469,8 @@
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zii-rx-VKS" kind="show" id="Ufs-Lg-PbS"/>
+                                    <action selector="goToRegisterAction:" destination="vIL-lL-m5h" eventType="touchUpInside" id="8DA-qh-wDQ"/>
+                                    <segue destination="Zii-rx-VKS" kind="show" identifier="goToRegister" id="Ufs-Lg-PbS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -644,10 +538,10 @@
             </objects>
             <point key="canvasLocation" x="-1426.5" y="882.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="SU5-sg-TaC">
             <objects>
-                <viewController id="VBi-uo-25j" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="VBi-uo-25j" customClass="LoginViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l84-9F-Qrw"/>
                         <viewControllerLayoutGuide type="bottom" id="nfT-PY-AWu"/>
@@ -692,6 +586,9 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="VBi-uo-25j" eventType="touchUpInside" id="Lzs-tp-iDE"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
@@ -713,6 +610,9 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.72156862745098038" green="0.30196078431372547" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="VBi-uo-25j" eventType="touchUpInside" id="OYx-uj-7Lh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -791,15 +691,19 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="3R1-QH-ear" id="KKD-Tx-kBJ"/>
+                        <outlet property="passwordTextField" destination="nsH-3H-uQL" id="XPv-Dg-OCZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSa-wE-iQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-463.5" y="486"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="bII-5p-ptF">
             <objects>
-                <viewController id="Zii-rx-VKS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="Zii-rx-VKS" customClass="RegisterViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fng-vu-BOR"/>
                         <viewControllerLayoutGuide type="bottom" id="Ivs-6p-LoO"/>
@@ -814,6 +718,9 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.72156862749999995" green="0.30196078430000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="Zii-rx-VKS" eventType="touchUpInside" id="LMT-po-Bpk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-4Y-yP0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -821,6 +728,9 @@
                                 <state key="normal" title="Criar Conta">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerAction:" destination="Zii-rx-VKS" eventType="touchUpInside" id="o8d-aL-aS5"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-S9-KJj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -839,20 +749,6 @@
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-Jj-fLg" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="126" y="143" width="122" height="30"/>
-                                <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-YA-sfu" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -898,6 +794,20 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="adicionar foto"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-YA-sfu" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="126" y="143" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -930,10 +840,10 @@
                                 <exclude reference="5dz-4Y-yP0"/>
                                 <exclude reference="bcz-S9-KJj"/>
                                 <exclude reference="jmY-Jj-fLg"/>
-                                <exclude reference="hoZ-YA-sfu"/>
                                 <exclude reference="haR-TY-SxA"/>
                                 <exclude reference="Vd7-nw-mzX"/>
                                 <exclude reference="4o3-XQ-cs6"/>
+                                <exclude reference="hoZ-YA-sfu"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CgD-G8-G3Q"/>
@@ -966,10 +876,10 @@
                                 <include reference="5dz-4Y-yP0"/>
                                 <include reference="bcz-S9-KJj"/>
                                 <include reference="jmY-Jj-fLg"/>
-                                <include reference="hoZ-YA-sfu"/>
                                 <include reference="haR-TY-SxA"/>
                                 <include reference="Vd7-nw-mzX"/>
                                 <include reference="4o3-XQ-cs6"/>
+                                <include reference="hoZ-YA-sfu"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="CgD-G8-G3Q"/>
@@ -997,6 +907,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="Vd7-nw-mzX" id="pQy-DP-1eM"/>
+                        <outlet property="email" destination="hoZ-YA-sfu" id="OC7-rp-H3h"/>
+                        <outlet property="name" destination="jmY-Jj-fLg" id="3cC-cx-kfL"/>
+                        <outlet property="password" destination="haR-TY-SxA" id="ZLg-JS-Zoj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUx-0k-UCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1052,82 +968,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Muq-IF-XOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-471" y="1990.5"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-yV-isR" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="139" y="200" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.92291803010471207" green="0.92129969793810462" blue="0.91696825969385731" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778220000001" green="0.70210242150000002" blue="0.12450311090000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="200" width="97" height="40"/>
-                                </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhj-71-fW4">
-                                <rect key="frame" x="168" y="390" width="40" height="32"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gB0-JS-t1V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-9h-6an">
-                                <rect key="frame" x="161" y="444" width="52" height="30"/>
-                                <state key="normal" title="Sign up"/>
-                                <connections>
-                                    <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mt-nd-krL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-RO-WO7">
-                                <rect key="frame" x="126" y="501" width="123" height="30"/>
-                                <state key="normal" title="Forgot Password?"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-qy-Xy7" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="139" y="307" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.91905268324607325" green="0.91744112894592023" blue="0.91312783154480814" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.17463778218526438" green="0.70210242146596857" blue="0.12450311094275532" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Eba-FM-UyW"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="emailTxtField" destination="yK2-yV-isR" id="jCB-L4-EwD"/>
-                        <outlet property="passwordTextField" destination="FrD-qy-Xy7" id="XQV-e6-jjZ"/>
-                        <segue destination="kkm-jw-aab" kind="show" identifier="LoginToRegisterViewController" id="Zis-nm-Hdv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-137.25" y="-158.625"/>
         </scene>
     </scenes>
     <resources>
