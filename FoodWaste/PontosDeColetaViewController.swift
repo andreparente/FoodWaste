@@ -19,20 +19,24 @@ class CustomAnnotation: NSObject, MKAnnotation {
     var title: String?
     var subtitle: String?
 }
-class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableViewDelegate,UITableViewDataSource{
+class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate{
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var map: MKMapView!
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.map.delegate = self
+        map.showsUserLocation = true
         let location = CLLocation(latitude: -22.9068, longitude: -43.1729)
         let regionRadius: CLLocationDistance = 100000
         func centerMapOnLocation(location: CLLocation) {
             let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 2.0, regionRadius * 2.0)
             map.setRegion(coordinateRegion, animated: true)
         }
-        let location2 = CLLocation(latitude: -22.9767, longitude: -43.3946)
+                let location2 = CLLocation(latitude: -22.9767, longitude: -43.3946)
         centerMapOnLocation(location2)
         let ann=CustomAnnotation(coordinate: location2.coordinate, title: "Parque Olímpico",subtitle: "Barra Da Tijuca")
         self.map.addAnnotation(ann)
@@ -41,6 +45,27 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
         self.map.addAnnotation(ann2)
 
         // Do any additional setup after loading the view.
+    }
+    
+    func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            map.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        checkLocationAuthorizationStatus()
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            print("Found user's location: \(location)")
+        }
+    }
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Failed to find user's location: \(error.localizedDescription)")
     }
 
     override func didReceiveMemoryWarning() {
