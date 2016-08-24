@@ -31,6 +31,7 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
        // Database().postPlace("Spoleto", address:"Rua Nascimento Silva 234")
         self.map.delegate = self
         map.showsUserLocation = true
+        self.table.delegate = self
         let location = CLLocation(latitude: -22.9068, longitude: -43.1729)
         let regionRadius: CLLocationDistance = 100000
         func centerMapOnLocation(location: CLLocation) {
