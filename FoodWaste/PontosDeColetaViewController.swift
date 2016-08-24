@@ -27,7 +27,8 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      //  places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva 234"))
+       // Database().postPlace("Spoleto", address:"Rua Nascimento Silva 234")
         self.map.delegate = self
         map.showsUserLocation = true
         let location = CLLocation(latitude: -22.9068, longitude: -43.1729)
@@ -73,12 +74,18 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
         // Dispose of any resources that can be recreated.
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return places.count
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row)
+       // performSegueWithIdentifier("TableTo\(indexPath.row)", sender: self)
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.table.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
+        cell.name.text = places[indexPath.row].title
+       // cell.button = UIButton()
+       // cell.distance =
+       // cell.imagePlace = UIImage()
         return cell
     }
     /*

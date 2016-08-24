@@ -20,9 +20,6 @@ public class Database {
         let dataBaseRef = FIRDatabase.database().reference()
         
         dataBaseRef.child("Places").childByAutoId().setValue(postPlace)
-        
-        
-        
     }
     
     func retrievePlaces() {
