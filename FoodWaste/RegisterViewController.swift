@@ -118,7 +118,7 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
             profileImage.image = pickedImage
         }
         
-        
+       /*
          let imageURL = info[UIImagePickerControllerReferenceURL] as! NSURL
          let imageName = imageURL.path!
          let documentDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! as String
@@ -131,7 +131,7 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
          let imageData = NSData(contentsOfFile: localPath)!
          let photoURL = NSURL(fileURLWithPath: localPath)
          let imageWithData = UIImage(data: imageData)!
-        
+        */
         picker.dismissViewControllerAnimated(true, completion: nil)
 
 

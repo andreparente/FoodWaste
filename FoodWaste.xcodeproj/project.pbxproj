@@ -19,6 +19,8 @@
 		8AD8F3501D5FFE3A00104D0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AD8F34F1D5FFE3A00104D0D /* GoogleService-Info.plist */; };
 		8AF6036C1D64D2A1001833C5 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6036B1D64D2A1001833C5 /* Database.swift */; };
 		9C8912301D61194600F9767F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89122F1D61194600F9767F /* Place.swift */; };
+		9C9157191D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9157181D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift */; };
+		9C91571B1D6E0DCD00FA5A0F /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91571A1D6E0DCD00FA5A0F /* HelpViewController.swift */; };
 		9CB0BB6F1D5E069800AAB7E4 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */; };
 		9CFBE18F1D6C8CB90000A5C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */; };
 		AFDC3C3A95177CD498E2FCA3 /* Pods_FoodWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */; };
@@ -43,6 +45,8 @@
 		8AD8F34F1D5FFE3A00104D0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8AF6036B1D64D2A1001833C5 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		9C89122F1D61194600F9767F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		9C9157181D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PontodeColetaUnicoViewController.swift; sourceTree = "<group>"; };
+		9C91571A1D6E0DCD00FA5A0F /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				9CB0BB6E1D5E069800AAB7E4 /* QRCodeViewController.swift */,
 				8A31D6EA1D6AC20F00A22D16 /* ForgotPasswordViewController.swift */,
 				9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */,
+				9C9157181D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift */,
+				9C91571A1D6E0DCD00FA5A0F /* HelpViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -288,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4B30C01D5FB8C600565133 /* PontosDeColetaViewController.swift in Sources */,
+				9C9157191D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift in Sources */,
 				EF3C06AD1D6CC2EB0020EC89 /* InitialViewController.swift in Sources */,
 				9CB0BB6F1D5E069800AAB7E4 /* QRCodeViewController.swift in Sources */,
+				9C91571B1D6E0DCD00FA5A0F /* HelpViewController.swift in Sources */,
 				8A31D6EB1D6AC20F00A22D16 /* ForgotPasswordViewController.swift in Sources */,
 				8A1A75F61D5D6A1600851CE5 /* LoginViewController.swift in Sources */,
 				8A1A75FC1D5D6A1600851CE5 /* FoodWaste.xcdatamodeld in Sources */,
