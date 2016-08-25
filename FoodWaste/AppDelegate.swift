@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             
             //nao ta logado vai pro login
-            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController")
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("InitialViewController")
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }

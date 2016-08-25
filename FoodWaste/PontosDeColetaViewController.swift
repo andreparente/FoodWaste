@@ -27,8 +27,7 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva 234"))
-       // Database().postPlace("Spoleto", address:"Rua Nascimento Silva 234")
+        checkLocationAuthorizationStatus()
         self.map.delegate = self
         map.showsUserLocation = true
         self.table.delegate = self
@@ -49,16 +48,16 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func back(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func checkLocationAuthorizationStatus() {
         if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
             map.showsUserLocation = true
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        checkLocationAuthorizationStatus()
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
