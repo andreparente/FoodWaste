@@ -7,18 +7,19 @@
 //
 
 import Foundation
-
+import UIKit
 public var places : [Place] = []
 
 public class Place
 {
     var title:String!
     var address: String!
-    
-    init(title: String, address: String) {
+    var image:UIImage!
+    init(title: String, address: String,image:UIImage) {
         
         self.title = title
         self.address = address
+        self.image = image
         
     }
 }

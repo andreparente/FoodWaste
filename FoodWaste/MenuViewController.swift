@@ -16,8 +16,6 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var labelPoints: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        places.removeAll()
-        places.append(Place(title: "Parque Olímpico", address: "Av. Embaixador Abelardo Bueno, 3401 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-039"))
         // Do any additional setup after loading the view.
     }
 

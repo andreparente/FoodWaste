@@ -27,6 +27,8 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        places.removeAll()
+        places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva", image: UIImage(named: "spoletto")!))
         checkLocationAuthorizationStatus()
         self.map.delegate = self
         map.showsUserLocation = true
@@ -85,7 +87,7 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
         cell.name.text = places[indexPath.row].title
        // cell.button = UIButton()
        // cell.distance =
-       // cell.imagePlace = UIImage()
+        cell.imagePlace.image = places[indexPath.row].image
         return cell
     }
     /*
