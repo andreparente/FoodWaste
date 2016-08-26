@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PontodeColetaUnicoViewController: UIViewController {
+class PontodeColetaUnicoViewController: UIViewController{
     
     @IBOutlet weak var tablePremios: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!

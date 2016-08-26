@@ -25,6 +25,7 @@
 		9CFBE18F1D6C8CB90000A5C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */; };
 		9CFE9B371D7059EF00A64713 /* TableViewCellPontoUnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE9B361D7059EF00A64713 /* TableViewCellPontoUnico.swift */; };
 		9CFE9B3A1D70624000A64713 /* ResgatarPremioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE9B391D70624000A64713 /* ResgatarPremioViewController.swift */; };
+		9CFE9B3C1D7065CA00A64713 /* Prize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE9B3B1D7065CA00A64713 /* Prize.swift */; };
 		AFDC3C3A95177CD498E2FCA3 /* Pods_FoodWaste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20063A1B969A858357A1D0FA /* Pods_FoodWaste.framework */; };
 		EF3C06AD1D6CC2EB0020EC89 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C06AC1D6CC2EB0020EC89 /* InitialViewController.swift */; };
 		EF4B30BE1D5FB8B500565133 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B30BD1D5FB8B500565133 /* MenuViewController.swift */; };
@@ -53,6 +54,7 @@
 		9CFBE18E1D6C8CB90000A5C5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9CFE9B361D7059EF00A64713 /* TableViewCellPontoUnico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellPontoUnico.swift; sourceTree = "<group>"; };
 		9CFE9B391D70624000A64713 /* ResgatarPremioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResgatarPremioViewController.swift; sourceTree = "<group>"; };
+		9CFE9B3B1D7065CA00A64713 /* Prize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prize.swift; sourceTree = "<group>"; };
 		B644E971F3C0CCC31A17463C /* Pods-FoodWaste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.release.xcconfig"; sourceTree = "<group>"; };
 		BDCCEB31526FD71FD01489D2 /* Pods-FoodWaste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodWaste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodWaste/Pods-FoodWaste.debug.xcconfig"; sourceTree = "<group>"; };
 		EF3C06AC1D6CC2EB0020EC89 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				8A1A760F1D5D7A8E00851CE5 /* User.swift */,
 				9C89122F1D61194600F9767F /* Place.swift */,
+				9CFE9B3B1D7065CA00A64713 /* Prize.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFE9B3C1D7065CA00A64713 /* Prize.swift in Sources */,
 				9CFE9B3A1D70624000A64713 /* ResgatarPremioViewController.swift in Sources */,
 				EF4B30C01D5FB8C600565133 /* PontosDeColetaViewController.swift in Sources */,
 				9C9157191D6E0CD500FA5A0F /* PontodeColetaUnicoViewController.swift in Sources */,

@@ -20,6 +20,12 @@ class MenuViewController: UIViewController {
         places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva", image: UIImage(named: "spoletto")!))
         places.append(Place(title: "Vila Olímpica", address: "Rua Candido Benicio 3401", image: UIImage(named: "vilaOlimpica")!))
         places.append(Place(title: "Arena de Hockey", address: "Av. Duque de Caxias, 2020", image: UIImage(named: "arenaHockey")!))
+        prizes.removeAll()
+        prizes.append(Prize(name: "Refrigerante 300ml", image: UIImage(named:"refri")!, qtdPoints: 2))
+        prizes.append(Prize(name: "Mini Tortinha", image: UIImage(named:"tortinha")!, qtdPoints: 2))
+        prizes.append(Prize(name: "Chaveiro Rio 2016", image: UIImage(named:"chaveiro")!, qtdPoints: 5))
+        prizes.append(Prize(name: "Pelúcia Vinícius", image: UIImage(named:"vinicius")!, qtdPoints: 15))
+        print(prizes)
         // Do any additional setup after loading the view.
     }
 
