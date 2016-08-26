@@ -9,13 +9,32 @@
 import UIKit
 
 class PontodeColetaUnicoViewController: UIViewController {
-
+    
+    @IBOutlet weak var tablePremios: UITableView!
+    @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var nomePonto: UILabel!
     @IBOutlet weak var imagePonto: UIImageView!
+    var index:Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        switch segment.selectedSegmentIndex
+        {
+        case 0:
+            tablePremios.hidden = true
+        case 1:
+            tablePremios.hidden = true
+        case 2:
+            tablePremios.hidden = false
+        default:
+            break
+        }
+        nomePonto.text = places[index].title
+        imagePonto.image = places[index].image
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func back(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,6 +16,10 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var labelPoints: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        places.removeAll()
+        places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva", image: UIImage(named: "spoletto")!))
+        places.append(Place(title: "Vila Olímpica", address: "Rua Candido Benicio 3401", image: UIImage(named: "vilaOlimpica")!))
+        places.append(Place(title: "Arena de Hockey", address: "Av. Duque de Caxias, 2020", image: UIImage(named: "arenaHockey")!))
         // Do any additional setup after loading the view.
     }
 

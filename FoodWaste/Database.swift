@@ -21,7 +21,7 @@ public class Database {
         
         dataBaseRef.child("Places").childByAutoId().setValue(postPlace)
     }
-    
+    /*
     func retrievePlaces() {
         
         let dataBaseRef = FIRDatabase.database().reference()
@@ -36,7 +36,7 @@ public class Database {
             
         })
     }
-    
+    */
     func postUser() {
         
         

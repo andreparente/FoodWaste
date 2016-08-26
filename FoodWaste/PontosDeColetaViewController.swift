@@ -24,15 +24,16 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var map: MKMapView!
     let locationManager = CLLocationManager()
-    
+    var index:Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-        places.removeAll()
-        places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva", image: UIImage(named: "spoletto")!))
+      
+
         checkLocationAuthorizationStatus()
         self.map.delegate = self
         map.showsUserLocation = true
-        self.table.delegate = self
+        table.delegate = self
+        table.dataSource = self
         let location = CLLocation(latitude: -22.9068, longitude: -43.1729)
         let regionRadius: CLLocationDistance = 100000
         func centerMapOnLocation(location: CLLocation) {
@@ -80,7 +81,8 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.row)
-       // performSegueWithIdentifier("TableTo\(indexPath.row)", sender: self)
+        index = indexPath.row
+        performSegueWithIdentifier("PontodeColetaToPontodeColetaUnico", sender: self)
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.table.dequeueReusableCellWithIdentifier("cell") as! TableViewCell
@@ -90,14 +92,15 @@ class PontosDeColetaViewController: UIViewController,MKMapViewDelegate,UITableVi
         cell.imagePlace.image = places[indexPath.row].image
         return cell
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let viewController: PontodeColetaUnicoViewController = segue.destinationViewController as? PontodeColetaUnicoViewController {
+            viewController.index = index
+        }
+
     }
-    */
 
 }
