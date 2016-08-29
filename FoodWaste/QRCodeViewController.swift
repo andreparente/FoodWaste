@@ -81,7 +81,8 @@ class QRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
                 print(metadataObj.stringValue)
                 link = metadataObj.stringValue
                 (email,data,produto) = getDatafromQRCode(link)
-                dismissViewControllerAnimated(true, completion: nil)
+                performSegueWithIdentifier("CodeToAfterCode", sender: self)
+           //     dismissViewControllerAnimated(true, completion: nil)
                 
                 contGlobal += 1
                 return

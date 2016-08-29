@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+public var points = 0
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var indicator: UIActivityIndicatorView!
@@ -16,6 +17,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var labelPoints: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelPoints.text = String(points) + "points"
         places.removeAll()
         places.append(Place(title: "Spoleto", address: "Rua Nascimento Silva", image: UIImage(named: "spoletto")!))
         places.append(Place(title: "Vila Olímpica", address: "Rua Candido Benicio 3401", image: UIImage(named: "vilaOlimpica")!))

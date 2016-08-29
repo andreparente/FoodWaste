@@ -47,7 +47,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oju-V1-ZP0">
                                 <rect key="frame" x="117" y="383" width="141" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Registrar Doação">
+                                <state key="normal" title="Register Donation">
                                     <color key="titleColor" red="0.51764705882352935" green="0.64313725490196072" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -92,7 +92,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHR-rp-bkm">
                                 <rect key="frame" x="115" y="447" width="145" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Resgatar Prêmios">
+                                <state key="normal" title="Retrieve Prizes">
                                     <color key="titleColor" red="0.51764705882352935" green="0.64313725490196072" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -593,14 +593,14 @@
                                 <exclude reference="sBD-kf-JZp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="2d1-S6-jTT"/>
+                                <exclude reference="24c-62-KEU"/>
                                 <exclude reference="3rp-Bl-Fz9"/>
                                 <exclude reference="PFd-TY-ivq"/>
                                 <exclude reference="Ruy-50-jrt"/>
                                 <exclude reference="cq4-so-uxY"/>
                                 <exclude reference="mAP-qj-Lks"/>
                                 <exclude reference="vpl-1X-Q4Z"/>
-                                <exclude reference="2d1-S6-jTT"/>
-                                <exclude reference="24c-62-KEU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -610,14 +610,14 @@
                                 <include reference="sBD-kf-JZp"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2d1-S6-jTT"/>
+                                <include reference="24c-62-KEU"/>
                                 <include reference="3rp-Bl-Fz9"/>
                                 <include reference="PFd-TY-ivq"/>
                                 <include reference="Ruy-50-jrt"/>
                                 <include reference="cq4-so-uxY"/>
                                 <include reference="mAP-qj-Lks"/>
                                 <include reference="vpl-1X-Q4Z"/>
-                                <include reference="2d1-S6-jTT"/>
-                                <include reference="24c-62-KEU"/>
                             </mask>
                         </variation>
                     </view>
@@ -849,6 +849,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" id="xBk-SV-XMO" customClass="HelpCell" customModule="FoodWaste" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBk-SV-XMO" id="BQZ-ss-5HF">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I win points?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUM-Vl-KcF">
@@ -941,11 +942,55 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="messageLabel" destination="N2z-gZ-4BB" id="uDG-Db-xPk"/>
+                        <segue destination="lll-00-1mQ" kind="show" identifier="CodeToAfterCode" id="Qll-Z2-lzk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE2-n6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3422.25" y="594.375"/>
+        </scene>
+        <!--After Code View Controller-->
+        <scene sceneID="n42-a7-29n">
+            <objects>
+                <viewController id="lll-00-1mQ" customClass="AfterCodeViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X8j-dR-vr9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvT-xx-8gd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MaG-PT-RNT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkM-Bx-eCk">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="66" width="335" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xkM-Bx-eCk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xkM-Bx-eCk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="xkM-Bx-eCk" id="L7N-82-LF6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIj-G1-B1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4152.75" y="594.375"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="pBN-ma-qdr">
@@ -975,13 +1020,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-fe-7gb">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não é cadastrado?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-Iv-Bjy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-Iv-Bjy">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -990,7 +1029,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-1p-JwT">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Entrar">
+                                <state key="normal" title="Log in">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1001,7 +1040,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-Gj-YEE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Criar Conta">
+                                <state key="normal" title="Create account">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1009,6 +1048,12 @@
                                     <segue destination="Zii-rx-VKS" kind="show" identifier="goToRegister" id="Ufs-Lg-PbS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-fe-7gb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1027,10 +1072,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rvn-VY-PDa"/>
-                                <exclude reference="qZu-fe-7gb"/>
                                 <exclude reference="LTr-Iv-Bjy"/>
                                 <exclude reference="ZXa-1p-JwT"/>
                                 <exclude reference="fq3-Gj-YEE"/>
+                                <exclude reference="qZu-fe-7gb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="LHL-0j-vE3"/>
@@ -1049,10 +1094,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rvn-VY-PDa"/>
-                                <include reference="qZu-fe-7gb"/>
                                 <include reference="LTr-Iv-Bjy"/>
                                 <include reference="ZXa-1p-JwT"/>
                                 <include reference="fq3-Gj-YEE"/>
+                                <include reference="qZu-fe-7gb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="LHL-0j-vE3"/>
@@ -1126,7 +1171,17 @@
                                     <action selector="loginAction:" destination="VBi-uo-25j" eventType="touchUpInside" id="Lzs-tp-iDE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDY-zP-IoS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleColor" red="0.72156862745098038" green="0.30196078431372547" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="VBi-uo-25j" eventType="touchUpInside" id="OYx-uj-7Lh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsH-3H-uQL" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1140,16 +1195,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDY-zP-IoS">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Cancelar">
-                                    <color key="titleColor" red="0.72156862745098038" green="0.30196078431372547" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelAction:" destination="VBi-uo-25j" eventType="touchUpInside" id="OYx-uj-7Lh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1177,8 +1222,8 @@
                                 <exclude reference="Kp5-fN-4fQ"/>
                                 <exclude reference="3R1-QH-ear"/>
                                 <exclude reference="POY-u1-0Oo"/>
-                                <exclude reference="nsH-3H-uQL"/>
                                 <exclude reference="XDY-zP-IoS"/>
+                                <exclude reference="nsH-3H-uQL"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="9gD-Bq-mYt"/>
@@ -1204,8 +1249,8 @@
                                 <include reference="Kp5-fN-4fQ"/>
                                 <include reference="3R1-QH-ear"/>
                                 <include reference="POY-u1-0Oo"/>
-                                <include reference="nsH-3H-uQL"/>
                                 <include reference="XDY-zP-IoS"/>
+                                <include reference="nsH-3H-uQL"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="9gD-Bq-mYt"/>
@@ -1261,7 +1306,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-4Y-yP0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Criar Conta">
+                                <state key="normal" title="Create account">
                                     <color key="titleColor" red="0.51764705879999995" green="0.64313725489999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1284,7 +1329,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-Jj-fLg" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-Jj-fLg" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1298,7 +1343,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-TY-SxA" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-TY-SxA" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1312,7 +1357,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-nw-mzX" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-nw-mzX" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="126" y="143" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.9190526832" green="0.91744112889999996" blue="0.91312783149999999" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
